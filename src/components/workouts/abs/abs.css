@@ -1,0 +1,58 @@
+.root{
+    --accent-color:#6096ba;
+    --base-color:#e7ecef;
+    --text-color:#274c77;
+    --input-color:#a3cef1;
+}
+
+.workout-container{
+    background-color: var(--base-color);
+    height: 100vh;
+    width:100%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow:auto;
+}
+
+
+
+.exercise-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    margin-top:5vh;
+}
+
+.exercise-card {
+    display: flex;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.exercise-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.exercise-name {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.exercise-duration {
+    font-size: 1rem;
+    color: #666;
+    text-align: center;
+}

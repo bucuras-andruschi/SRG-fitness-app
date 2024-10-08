@@ -1,0 +1,13 @@
+:root{
+    --accent-color:#6096ba;
+    --base-color:#e7ecef;
+    --text-color:#274c77;
+    --input-color:#a3cef1;
+}
+
+.chat{
+    height:99vh;
+    width:1225px;
+    margin-left:250px;
+}
+

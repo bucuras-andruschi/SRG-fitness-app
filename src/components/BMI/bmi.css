@@ -1,0 +1,106 @@
+:root{
+    --accent-color:#6096ba;
+    --base-color:#e7ecef;
+    --text-color:#274c77;
+    --input-color:#a3cef1;
+}
+
+.container{
+    background-color: var(--base-color);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+.bmiCalculator {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.bmiCalculator h1 {
+    text-align: center;
+    color: var(--text-color);
+}
+
+.bmiCalculator p {
+    text-align: center;
+    color: var(--text-color);
+}
+
+.unitToggle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.unitToggle label {
+    margin: 0 10px;
+}
+
+.inputGroup {
+    margin-bottom: 15px;
+}
+
+.inputGroup label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.inputGroup input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.my-input{
+    transition:500ms ease;
+    border:2px solid var(--input-color);
+    background-color:var(--input-color);
+}
+
+.my-input:hover{
+    border-color:var(--accent-color);
+    transition:500ms ease;
+}
+
+.my-input:focus{
+    outline:none;
+    border-color:var(--text-color)
+}
+
+.my-input::placeholder{
+    color:rgb(39, 76, 119, 0.75)
+}
+
+.result {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.bmiValue {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.bmiCategory {
+    font-size: 18px;
+    color: #666;
+}
+
+input[type="radio"]:focus,
+input[type="number"]:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+input[type="radio"]:focus-visible,
+input[type="number"]:focus-visible {
+    outline: none;
+    box-shadow: none;
+}
